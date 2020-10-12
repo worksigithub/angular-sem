@@ -12,20 +12,20 @@ export class TableComponent implements OnInit {
     {
       id: 1,
       cantidad: 1,
-      descripcion: "Detergente Limon",
-      urlImage: "../../assets/images/p1.jpg",
-      marca: "Magistral",
+      descripcion: "Leche entera",
+      urlImage: "https://share.worksiweb.com.ar/article-image/7790742448002",
+      marca: "La Serenisima",
       oferta: true,
-      precio: 79.00
+      precio: 78.00
     },
     {
       id: 2,
       cantidad: 1,
-      descripcion: "Dulde de leche",
-      urlImage: "../../assets/images/p2.jpg",
-      marca: "LuzAzul",
+      descripcion: "Leche descremada",
+      urlImage: "https://share.worksiweb.com.ar/article-image/7790742034502",
+      marca: "La Serenisima",
       oferta: false,
-      precio: 150.00
+      precio: 71.00
     }
   ];
 

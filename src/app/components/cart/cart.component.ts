@@ -10,9 +10,9 @@ export class CartComponent implements OnInit {
   datosCarrito = {
     id: 1,
     cantidad: 2,
-    descripcion: "Producto 1",
-    urlImage: "../../assets/images/p1.jpg",
-    precio: 10.00
+    descripcion: "Leche descremada",
+    urlImage: "https://share.worksiweb.com.ar/article-image/7790742034502",
+    precio: 71.00
   }
 
   constructor() { }
