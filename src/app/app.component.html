@@ -1,4 +1,15 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-md-8">
+            <app-table></app-table>
+        </div>
+        <div class="col-md-4">
+            <app-cart></app-cart>
+        </div>
+
+    </div>
+</div>

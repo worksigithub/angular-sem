@@ -1,0 +1,23 @@
+<div class="table-responsive">
+    <table class="table mt-2">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Cant</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Precio</th>
+                <th scope="col"><i title="Vaciar carrito" class="far fa-trash-alt text-danger"></i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">{{datosCarrito.id}}</th>
+                <td class="text-right">{{datosCarrito.cantidad}}</td>
+                <td><img src=">{{datosCarrito.urlImage}}" class="img-fluid" style="width: 30%;" alt="..."> {{datosCarrito.descripcion}}</td>
+                <td class="text-right">{{datosCarrito.precio}}</td>
+                <td title="Borrar item carrito"><i class="far fa-trash-alt"></i></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
