@@ -14,7 +14,7 @@
                 <th scope="row">{{datosCarrito.id}}</th>
                 <td class="text-right">{{datosCarrito.cantidad}}</td>
                 <td><img src="{{datosCarrito.urlImage}}" class="img-fluid" style="width: 30%;" alt="..."> {{datosCarrito.descripcion}}</td>
-                <td class="text-right">{{datosCarrito.precio}}</td>
+                <td class="text-right">{{datosCarrito.precio | currency}}</td>
                 <td title="Borrar item carrito"><i class="far fa-trash-alt"></i></td>
             </tr>
 

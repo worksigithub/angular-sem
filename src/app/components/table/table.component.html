@@ -3,12 +3,12 @@
         <div class="card m-1">
             <img src="{{dato.urlImage}}" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">{{dato.descripcion}}</p>
+                <p class="card-text mt-0 mb-0"><strong>{{dato.descripcion | titlecase}}</strong></p>
                 <small class="card-text">{{dato.marca}}</small>
                 <div class="row">
                     <div class="col-md-8">
                         <i *ngIf="dato.oferta" title="Oferta especial" class="position-absolute fas fa-percentage text-info"></i>
-                        <p class="card-text text-right">$ {{dato.precio}}</p>
+                        <p class="card-text text-right"><strong>{{dato.precio | currency}}</strong></p>
                     </div>
                     <div class="col-md-2">
                         <button type="button" class="btn btn-secondary" title="Agregar al Carrito"><i class="fas fa-cart-plus"></i></button>
