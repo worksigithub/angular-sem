@@ -7,31 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" [routerLink]="['/home']">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Preguntas</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Categorías
-          </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Almacen</a>
-                    <a class="dropdown-item" href="#">Lácteos</a>
-                    <a class="dropdown-item" href="#">Limpieza</a>
-                    <a class="dropdown-item" href="#">Perfumería</a>
-                    <a class="dropdown-item" href="#">Kits</a>
-                </div>
-            </li>
-            <li *ngIf="!login" class="nav-item">
-                <a class="nav-link " href="#" tabindex="-1">Ingresar</a>
-            </li>
-            <li *ngIf="login" class="nav-item">
-                <a class="nav-link " href="#" tabindex="-1">Hola Roberto</a>
-            </li>
-            <li *ngIf="login" class="nav-item">
-                <a class="nav-link " href="#" tabindex="-1"><i class="fas fa-cart-plus"></i></a>
+                <a class="nav-link"  [routerLink]="['/nosotros']">Nosotros</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

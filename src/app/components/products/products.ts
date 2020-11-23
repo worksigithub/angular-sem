@@ -6,4 +6,5 @@ export interface Products {
     marca: string,
     oferta: boolean,
     precio: number
+    stock: number,
 }

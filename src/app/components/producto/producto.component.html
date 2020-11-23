@@ -1,0 +1,31 @@
+<div class="card m-1">
+    <img src="{{dato.urlImage}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text mt-0 mb-0"><strong>{{dato.descripcion | titlecase}}</strong></p>
+        <span class="badge badge-primary">Stock: {{dato.stock}}</span>
+       
+        <div class="row">
+            <div class="col-md-4">
+                <i *ngIf="dato.oferta" title="Oferta especial" class="position-absolute fas fa-percentage text-info"></i>
+                <p class="card-text text-right"><strong>{{dato.precio | currency}}</strong></p>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-secondary" title="Agregar al Carrito" (click)="agregarAlCarrito()"><i class="fas fa-cart-plus"></i></button>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend" id="button-addon3">
+                      <button class="btn btn-outline-secondary" type="button" (click)="agregarCantidad()">+</button>
+                      <button class="btn btn-outline-secondary" type="button" (click)="restarCantidad()">-</button>
+                    </div>
+                    <input type="text" class="form-control text-center" disabled value="{{dato.cantidad}}" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+                  </div>
+            </div>
+            <div class="col-md-12" *ngIf="dato.stock == 0">
+                <div class="alert alert-danger" role="alert">
+                    Producto sin stock
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
